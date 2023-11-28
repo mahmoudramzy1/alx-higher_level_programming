@@ -3,5 +3,5 @@
 a = ord('a')
 
 while a <= 122:
-    print(f"{a:c}", end = "")
+    print("{:c}".format(a), end = "")
     a += 1
