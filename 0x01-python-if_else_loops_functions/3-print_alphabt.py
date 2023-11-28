@@ -8,4 +8,3 @@ while a <= 122:
         continue
     print("{:c}".format(a), end="")
     a += 1
-
