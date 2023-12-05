@@ -2,11 +2,10 @@
 if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, div, mul
-    args = sys.argv[:]
     if len(sys.argv) == 4:
-        a = int(args[1])
-        operator = args[2]
-        b = int(args[3])
+        a = int(sys.argv[1])
+        operator = sys.argv[2]
+        b = int(sys.argv[3])
         if args[2] == '+':
             print("{} + {} = {}".format(a, b, add(a, b)))
         elif args[2] == '-':
