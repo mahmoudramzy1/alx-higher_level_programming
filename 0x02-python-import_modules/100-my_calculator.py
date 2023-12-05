@@ -3,7 +3,6 @@ if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, div, mul
     args = sys.argv[:]
-    i = len(args)
     if i == 4:
         a = int(args[1])
         operator = args[2]
