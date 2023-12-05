@@ -4,7 +4,6 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, div, mul
     args = sys.argv[:]
     i = len(args)
-    n = 0
     if i == 4:
         a = int(args[1])
         operator = args[2]
