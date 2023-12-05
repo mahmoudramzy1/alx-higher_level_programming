@@ -6,13 +6,13 @@ if __name__ == "__main__":
         a = int(sys.argv[1])
         operator = sys.argv[2]
         b = int(sys.argv[3])
-        if args[2] == '+':
+        if operator == '+':
             print("{} + {} = {}".format(a, b, add(a, b)))
-        elif args[2] == '-':
+        elif operator == '-':
             print("{} - {} = {}".format(a, b, sub(a, b)))
-        elif args[2] == '/':
+        elif operator == '/':
             print("{} / {} = {}".format(a, b, div(a, b)))
-        elif args[2] == '*':
+        elif operator == '*':
             print("{} * {} = {}".format(a, b, mul(a, b)))
         else:
             print("Unknown operator. Available operators: +, -, * and /")
