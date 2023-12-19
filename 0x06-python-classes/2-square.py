@@ -1,6 +1,8 @@
 #!/usr/bin/pyhton3
+
+
 class Square:
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """
         Args:
             size: length of the side of the square
