@@ -1,4 +1,5 @@
 #!/usr/bin/pyhton3
+"""Square module"""
 
 
 class Square:
