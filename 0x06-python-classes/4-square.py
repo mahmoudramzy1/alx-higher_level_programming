@@ -1,29 +1,36 @@
 #!/usr/bin/python3
+"""Square module"""
+
+
 class Square:
+    """Defines a square"""
+
     def __init__(self, size=0):
-        """
+        """Constractor
+
         Args:
             size: length of the side of the square
-        Raise:
-            TypeError: if size is not an integer
-            ValueError: if size is less than zero
-            """
+        """
         self.__size = size
 
     @proprety
     def size(self):
-        """
-        Return: the size
+        """Returns the size
         """
         return self.__size
 
     @size.setter
     def size(self, new_size):
-        """
+        """Property setter for size
+
+        Args:
+            new_size: the size to set
+
         Raise:
             TypeError: if size not integer
             ValueError: if size less than 0
-            """
+
+        """
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if size < 0:
@@ -31,7 +38,8 @@ class Square:
         self.__size = new_size
 
     def area(self):
-        """
+        """Calculate the area of the square
+
         Return: area of the square
         """
         return self.__size**2
