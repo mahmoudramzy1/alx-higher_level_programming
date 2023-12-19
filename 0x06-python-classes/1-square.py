@@ -1,8 +1,15 @@
 #!/usr/bin/pyhton3
+"""define a class square"""
 class Square:
+    """
+    class that defines squares
+    Atrributes:
+        size: size of the square.
+    """
     def __init__(self, size):
-        """
+        """Constractor.
+
         Args:
-            size: length of the side of the square
-            """
+            size: length of the side of the square.
+        """
         self.__size = size
