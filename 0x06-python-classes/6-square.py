@@ -12,8 +12,8 @@ class Square:
             __size: length of the side of the square
             __position: position of printing square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
