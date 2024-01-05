@@ -7,8 +7,8 @@ class Rectangle:
     Class that defines properties of rectangle.
     
     Atrributes:
-        width:weidth of the regtangle
-        height:height of the regtangle
+        width (int):weidth of the regtangle
+        height (int):height of the regtangle
     """
     def __init__(self, width=0, height=0):
          """Creates new instances of Rectangle.
@@ -44,7 +44,7 @@ class Rectangle:
         """Property setter for width of rectangle.
 
         Args:
-            value:the new width
+            value (int):the new width of the regtangle
 
         Raises:
             TypeError: if width is not integer
@@ -62,7 +62,7 @@ class Rectangle:
         """Property setter for height of rectangle.
 
         Args:
-            value:the new height
+            value (int):the new height
 
         Raises:
             TypeError: if height is not integer
