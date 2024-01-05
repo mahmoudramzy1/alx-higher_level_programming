@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""Rectangle module"""
-
+"""Defines an empty class Rectangle"""
 
 
 class Rectangle:
-    """Defines a regtangle.
+    """Class that defines properties of rectangle.
     """
     pass
