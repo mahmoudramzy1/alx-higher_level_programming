@@ -40,37 +40,37 @@ class Rectangle:
         return self.__height
     
     @width.setter
-    def width(self, new_width):
+    def width(self, value):
         """Property setter for width of rectangle.
 
         Args:
-            new_width:the new width
+            value:the new width
 
         Raises:
             TypeError: if width is not integer
             ValueError: if width is less than 0
         """
-        if not isinstance(new_width, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        elif new_width < 0:
+        elif value < 0:
             raise ValueError("width must be >= 0")
         else:
-            self.__width = new_width
+            self.__width = value
     
     @height.setter
-    def height(self, new_height):
+    def height(self, value):
         """Property setter for height of rectangle.
 
         Args:
-            new_height:the new height
+            value:the new height
 
         Raises:
             TypeError: if height is not integer
             ValueError: if height is less than 0
         """
-        if not isinstance(new_height, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif new_height < 0:
+        elif value < 0:
             raise ValueError("height must be >= 0")
         else:
-            self.__height = new_height
+            self.__height = value
