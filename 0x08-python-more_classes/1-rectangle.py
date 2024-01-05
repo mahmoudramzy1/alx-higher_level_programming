@@ -10,7 +10,7 @@ class Rectangle:
         width:weidth of the regtangle
         height:height of the regtangle
     """
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
          """Creates new instances of Rectangle.
 
         Args:
