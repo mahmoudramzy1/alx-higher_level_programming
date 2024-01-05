@@ -11,15 +11,16 @@ class Rectangle:
         height (int):height of the regtangle
     """
     def __init__(self, width=0, height=0):
-         """Creates new instances of Rectangle.
+        """Creates new instances of Rectangle.
 
         Args:
             width (int, optional): width of rectangle. Defaults to 0.
             height (int, optional): height of rectangle. Defaults to 0.
         """
-        self.widht = widht
+        
         self.height = height
-    
+        self.width = width
+
     @property
     def width(self):
         """Width retriver.
