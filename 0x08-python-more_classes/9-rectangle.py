@@ -137,6 +137,7 @@ class Rectangle:
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Computes the area of two rectangles and compares them.
 
@@ -158,9 +159,13 @@ class Rectangle:
     
     @classmethod
     def square(cls, size=0):
-        """instantiantes a new square.
+        """Returns a new rectangle instance with width == height == size.
 
         Args:
-            size: the size of the new square
+            cls: used to access class attributes.
+            size (int, optional): size of rectangle (1 side). Defaults to 0.
+
+        Returns:
+            Square: the new rectangle with equal values of height and width .
         """
         return cls(size, size)
