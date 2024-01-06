@@ -156,12 +156,10 @@ class Rectangle:
         return "".join(rectangle)
 
     def __repr__(self):
-        """Returns a string representation of the rectangle.
-
-        Returns:
-            str: the rectangle representation.
-        """
-        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+        """Return the string representation of the Rectangle."""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
 
     def __del__(self):
         """prints a string when instance is deleted
