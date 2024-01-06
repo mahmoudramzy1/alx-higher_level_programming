@@ -108,7 +108,6 @@ class Rectangle:
         Returns:
             str: the regtangle
         """
-        string = ""
         rectangle = []
 
         if self.__width == 0 or self.__height == 0:
