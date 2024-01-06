@@ -109,11 +109,19 @@ class Rectangle:
             str: the regtangle
         """
         string = ""
+        rectangle = []
 
         if self.__width == 0 or self.__height == 0:
             return ""
-        return (str(self.print_symbol * self.__width + "\n") *
-                self.__height)[:-1]
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rectangle.append(str(self.print_symbol))
+            rectangle.append("\n")
+
+        # remove blank line
+        rectangle.pop()
+
+        return "".join(rectangle)
 
     def __repr__(self):
         """Returns a string representation of the rectangle.
