@@ -3,6 +3,7 @@
 
 import json
 
+
 def to_json_string(my_obj):
     """serialize the data structure with json"""
     return json.dumps(my_obj)
