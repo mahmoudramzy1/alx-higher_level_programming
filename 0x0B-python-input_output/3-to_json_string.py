@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Defines fuction that serialize python data structure with json
-"""
+"""Defines fuction that serialize python data structure with json"""
 
 import json
 
