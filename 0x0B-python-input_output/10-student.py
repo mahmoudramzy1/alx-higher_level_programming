@@ -28,7 +28,7 @@ class Student:
         new_dict = {}
         for item in attr:
             try:
-                new_dict[item] = self.__dict__
+                new_dict[item] = self.__dict__[item]
             except Exception:
                 pass
         return new_dict
