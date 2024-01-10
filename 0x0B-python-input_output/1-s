@@ -1,16 +1,9 @@
 #!/usr/bin/python3
-"""Module defining the class Student based on 10-student.py"""
+"""Module defining the class Student based on 9-student.py"""
 
 
 class Student:
-    """
-    Class that defines properties of student.
-
-    Attributes:
-        first_name (str): first name of student.
-        last_name (int): last name of student.
-        age (int): age of student.
-    """
+    """Defines student data here"""
     def __init__(self, first_name, last_name, age):
         """Creates new instances of Student.
 
@@ -24,20 +17,16 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Retrieves a dictionary representation of a Student instance.
-
-        If attrs is a list of strings, only attribute names contained in,
-        this list must be retrieved.
-        Otherwise, all attributes must be retrieved.
+        """returns a dictionary representation of a Student instance.
 
         Returns:
-            dict: dictionary representation.
+            dict: dictionary representation
         """
         if attrs is None:
             return self.__dict__
-
+        
         new_dict = {}
-        for item in attrs:
+        for item in attr:
             try:
                 new_dict[item] = self.__dict__[item]
             except Exception:
@@ -45,7 +34,7 @@ class Student:
         return new_dict
 
     def reload_from_json(self, json):
-        """Replaces all attributes of the Student instance.
+          """Replaces all attributes of the Student instance.
 
         Args:
             json (dict): json object.
