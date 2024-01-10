@@ -24,7 +24,7 @@ class Student:
         """
         if attrs is None:
             return self.__dict__
-        
+
         new_dict = {}
         for item in attrs:
             try:
