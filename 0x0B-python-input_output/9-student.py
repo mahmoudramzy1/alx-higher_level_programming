@@ -23,5 +23,3 @@ class Student:
             dict: dictionary representation
         """
         return self.__dict__
-
-
