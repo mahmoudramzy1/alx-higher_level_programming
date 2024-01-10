@@ -33,4 +33,10 @@ class Student:
                 pass
         return new_dict
     def reload_from_json(self, json):
+          """Replaces all attributes of the Student instance.
 
+        Args:
+            json (dict): json object.
+        """
+        # print("Type json --> {}".format(type(json)))
+        self.__dict__.update(json)
