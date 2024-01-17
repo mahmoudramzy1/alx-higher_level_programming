@@ -69,10 +69,11 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        if self.__width == 0 or self.__height == 0:
+        """method prints the # of the rectangle"""
+        if self.width == 0 or self.height == 0:
             return ""
 
-        for i in range(self.__height):
-            for j in range(self.__width):
+        for i in range(self.height):
+            for j in range(self.width):
                 print("#", end="")
             print()
