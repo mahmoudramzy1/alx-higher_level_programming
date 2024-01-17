@@ -72,7 +72,7 @@ class Rectangle(Base):
         """method prints the # of the rectangle"""
         if self.width == 0 or self.height == 0:
             return ""
-        
+
         for b in range(self.y):
             print()
 
