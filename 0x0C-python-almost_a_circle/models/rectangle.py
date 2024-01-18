@@ -83,6 +83,7 @@ class Rectangle(Base):
             print()
 
     def update(self, *args):
+        """this method to update attributes"""
         self.id = args[0]
         if len(args) > 1 and args[1] is not None:
             self.width = args[1]
