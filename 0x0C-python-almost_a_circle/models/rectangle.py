@@ -82,17 +82,29 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """this method to update attributes"""
-        self.id = args[0]
-        if len(args) > 1 and args[1] is not None:
-            self.width = args[1]
-        if len(args) > 2 and args[2] is not None:
-            self.height = args[2]
-        if len(args) > 3 and args[3] is not None:
-            self.x = args[3]
-        if len(args) > 4 and args[4] is not None:
-            self.y = args[4]
+        if args:
+            self.id = args[0]
+            if len(args) > 1 and args[1] is not None:
+                self.width = args[1]
+            if len(args) > 2 and args[2] is not None:
+                self.height = args[2]
+            if len(args) > 3 and args[3] is not None:
+                self.x = args[3]
+            if len(args) > 4 and args[4] is not None:
+                self.y = args[4]
+        elif kwargs:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "width" in kwargs:
+                self.width = kwargs["width"]
+            if "height" in kwargs:
+                self.height = kwargs["height"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".\
