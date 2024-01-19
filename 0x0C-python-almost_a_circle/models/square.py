@@ -13,7 +13,7 @@ class Square(Rectangle):
         """retruns string info about the square object"""
         return '[{}] ({}) {}/{} - {}'.\
             format(type(self).__name__, self.id, self.x, self.y, self.width)
-    
+
     @property
     def size(self):
         """get the size of the square"""
