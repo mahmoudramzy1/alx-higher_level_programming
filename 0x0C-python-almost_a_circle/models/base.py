@@ -5,7 +5,7 @@ from json import dumps, loads
 
 class Base:
     """this is the base class"""
-    
+
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -16,6 +16,7 @@ class Base:
         else:
             self.id = id
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """Jsonifies a dictionary so it's quite rightly and longer."""
         if list_dictionaries is None or not list_dictionaries:
