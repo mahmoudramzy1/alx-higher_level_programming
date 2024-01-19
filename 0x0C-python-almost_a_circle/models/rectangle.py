@@ -112,5 +112,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         "returns the rectangle atrributes in dict"""
-        dic = {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height, 'width': self.width}
-        return dic
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}
