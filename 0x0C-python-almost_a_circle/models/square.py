@@ -32,9 +32,9 @@ class Square(Rectangle):
         if len(args) > 1 and args[1] is not None:
             self.width = args[1]
         if len(args) > 2 and args[2] is not None:
-            self.height = args[2]
+            self.x = args[2]
         if len(args) > 3 and args[3] is not None:
-            self.x = args[3]
+            self.y = args[3]
 
         elif kwargs:
             if "id" in kwargs:

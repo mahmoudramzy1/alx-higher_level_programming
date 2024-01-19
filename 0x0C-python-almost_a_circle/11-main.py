@@ -10,10 +10,10 @@ if __name__ == "__main__":
     s1.update(10)
     print(s1)
 
-    s1.update(1, 2)
+    s1.update(89, 6)
     print(s1)
 
-    s1.update(1, 2, 3)
+    s1.update(89, 6, 2)
     print(s1)
 
     s1.update(1, 2, 3, 4)
