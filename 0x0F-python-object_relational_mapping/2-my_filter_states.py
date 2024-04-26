@@ -16,7 +16,8 @@ if __name__ == "__main__":
     mycursor = conn.cursor()
 
     query = """
-    SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC""".format(sys.argv[4])
+    SELECT * FROM states WHERE name LIKE BINARY
+    '{}' ORDER BY states.id ASC""".format(sys.argv[4])
     mycursor.execute(query)
     states = mycursor.fetchall()
     for state in states:
