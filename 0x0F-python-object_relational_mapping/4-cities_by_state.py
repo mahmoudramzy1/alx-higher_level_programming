@@ -15,12 +15,13 @@ if __name__ == "__main__":
 
     mycursor = conn.cursor()
 
-    mycursor.execute("""SELECT cities.id, cities.name, states.name FROM cities, states
+    mycursor.execute("""SELECT cities.id, cities.name, states.name
+                        FROM cities, states
                         WHERE states.id = cities.state_id
                         ORDER BY states.id ASC;""")
 
     states = mycursor.fetchall()
     for state in states:
-            print(state)
+        print(state)
     mycursor.close()
     conn.close()
