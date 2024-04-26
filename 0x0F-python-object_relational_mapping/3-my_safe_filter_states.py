@@ -15,8 +15,10 @@ if __name__ == "__main__":
 
     mycursor = conn.cursor()
 
-    mycursor.execute("""SELECT * FROM states WHERE name = %s ORDER BY states.id ASC""",
-            (sys.argv[4], ))
+    mycursor.execute("""SELECT * FROM states
+                        WHERE name = %s ORDER BY states.id ASC""",
+                     (sys.argv[4], ))
+
     states = mycursor.fetchall()
     for state in states:
         if state[1] == sys.argv[4]:
