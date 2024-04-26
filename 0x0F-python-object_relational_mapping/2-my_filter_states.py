@@ -16,10 +16,11 @@ if __name__ == "__main__":
     mycursor = conn.cursor()
 
     mycursor.execute(
-            "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
+            "SELECT * FROM states ORDER BY id ASC"
             )
     states = mycursor.fetchall()
     for state in states:
-        print(state)
+        if state[1] == sys.argv[4]:
+            print(state)
     mycursor.close()
     conn.close()
