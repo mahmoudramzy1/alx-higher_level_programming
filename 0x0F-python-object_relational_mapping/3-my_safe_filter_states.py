@@ -15,10 +15,8 @@ if __name__ == "__main__":
 
     mycursor = conn.cursor()
 
-    query = """
-    SELECT * FROM states WHERE name LIKE BINARY
-    '{}' ORDER BY states.id ASC""".format(sys.argv[4])
-    mycursor.execute(query)
+    mycursor.execute("""SELECT * FROM states WHERE name = %s ORDER BY states.id ASC""",
+            (sys.argv[4], ))
     states = mycursor.fetchall()
     for state in states:
         if state[1] == sys.argv[4]:
