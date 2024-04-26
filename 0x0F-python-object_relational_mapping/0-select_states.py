@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""module for connect to mysql and retrive states table"""
+
 import MySQLdb
 import sys
 
