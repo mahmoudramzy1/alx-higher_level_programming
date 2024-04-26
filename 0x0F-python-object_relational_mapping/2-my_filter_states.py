@@ -20,7 +20,6 @@ if __name__ == "__main__":
             )
     states = mycursor.fetchall()
     for state in states:
-        if state[1].startswith("N"):
-            print(state)
+        print(state)
     mycursor.close()
     conn.close()
