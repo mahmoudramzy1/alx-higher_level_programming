@@ -2,7 +2,7 @@
 """script fetchs webpage"""
 
 import sys
-import urllib.request
+import urllib
 
 if __name__ == "__main__":
     try:
