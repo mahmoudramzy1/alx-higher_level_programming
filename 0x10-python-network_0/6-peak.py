@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """get the peak element"""
 
+
 def find_peak(list_of_integers):
     """find peak element in the list"""
     for i in list_of_integers:
