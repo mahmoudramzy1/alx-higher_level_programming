@@ -7,6 +7,5 @@ const text = process.argv[3];
 fs.writeFile(filename, text, (err) => {
   if (err) {
     console.error('Error reading file:', err);
-    return;
   }
 });
