@@ -1,1 +1,0 @@
-input&output permenantly data
