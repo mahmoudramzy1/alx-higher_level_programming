@@ -1,1 +1,0 @@
-lambda & map & filter & reduce
